@@ -11,8 +11,8 @@ body, html {
 
 .color-picker {
   background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 .color-picker .shade-selector,
 .color-picker .hue-selector {
@@ -29,18 +29,18 @@ body, html {
   background: linear-gradient(transparent, black), linear-gradient(90deg, white, transparent), linear-gradient(var(--color), var(--color));
 }
 .color-picker .hue-selector {
-  height: 8px;
+  height: 12px;
   background-image: linear-gradient(90deg, red, #ff0, lime, cyan, blue, #f0f, red);
 }
 .color-picker .hue-selector .pointer {
-  top: 4px;
+  top: 8px;
 }
 .color-picker .pointer {
   position: absolute;
   z-index: 1;
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
   border: 5px solid white;
   transform: translate(-10px, -10px);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 5px rgba(0, 0, 0, 0.2);
@@ -50,16 +50,16 @@ body, html {
 .info-box {
   display: flex;
   justify-content: space-between;
-  margin: 30px 10px 10px;
+  margin: 50px 20px 20px;
 }
 .info-box div {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 50px;
-  font-size: 12px;
-  height: 28px;
+  flex-basis: 80px;
+  font-size: 16px;
+  height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   user-select: all;
@@ -69,7 +69,7 @@ body, html {
   position: absolute;
   top: -18px;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 15px;
 }
 .info-box div:first-child {
   flex-basis: 80px;
