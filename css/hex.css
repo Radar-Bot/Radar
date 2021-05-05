@@ -8,7 +8,7 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    background: url(https://radar-bot.xyz/img/background.png) 75% 0% /140%;
+    background-image: url(https://radar-bot.xyz/img/background.png) 75% 0% /140%;
     animation: bg 25s linear infinite paused;
 }
 
