@@ -8,6 +8,7 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    background: url('../img/background.png") 75% 0% /140%;
 }
 
 .bg {
