@@ -1,0 +1,349 @@
+:root {
+  --dark: #202225;
+  --darkgray: #343a40;
+  --gray: #454d55;
+  --graybrown: #2b2b2b;
+  --lightgray: #3f444a;
+  --lightergray: #ddd;
+  --blue: #007bff;
+  --patreon-color: #f96854;
+}
+html {
+  box-sizing: border-box
+}
+
+
+/* body {
+  margin: 0;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  text-align: left;
+  background-color: #222
+} */
+
+/* html, body {
+  max-width: 100%;
+  overflow-x: inherit;
+} */
+
+code {
+  color: white;
+}
+.page-wrapper {
+  flex: 1;
+}
+.page-commands {
+  padding-top: 50px;
+}
+
+.centered {
+  justify-content: center;
+}
+.premium {
+  color: #f96854;
+  font-weight: bold;
+  display: block;
+}
+
+
+
+
+/* Banner */
+.banner {
+  padding-top: 50px;
+  background-color: var(--graybrown);
+  padding-bottom: 25px;
+}
+.banner-about {
+  text-align: left;
+  margin: 0 10px;
+}
+.banner-buttons {
+  padding: .3rem;
+  border-radius: 5px;
+}
+.banner-buttons ul {    
+  margin: 0;
+  padding: 0;
+  line-height: 1.25;
+}
+.banner-buttons li {
+  text-align: center;
+  border-radius: 5px;
+  list-style: none;
+}
+.front-button {
+  background-color: var(--blue);
+  font-weight: bold;
+  display: block;
+  padding: 0.5em 0.75em;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
+.premium-button {
+  background-color: var(--patreon-color);
+  max-height: 60px;
+}
+.premium-button img {
+  vertical-align: middle;
+  border-style: none;
+}
+.github-button {
+  background-color: white;
+  max-height: 60px;
+}
+.github-button img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* Nav Bar */
+/* .navbar {
+  background-color: #343a40;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+.navbar-brand img {
+  width: 35px;
+  height: 35px;
+  margin: 0px 10px 0px 15px;
+  vertical-align: top!important;
+  display: inline-block!important;
+}
+.navbar img {
+  vertical-align: middle;
+  border-style: none;
+}
+.navbar-brand a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+.navbar .nav-links {
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 2px 0px 2px 0px;
+}
+.navbar .nav-links:hover:not(.active) {
+background-color: #ddd;
+color: black;
+}
+.navbar .active {
+  color: white;
+  font-weight: bold;
+  background-color: linear-gradient(90deg, rgba(248,72,61,1) 0%, rgba(228,46,103,1) 100%);
+}
+.navbar-toggle {
+  font-size: 30px;
+  display: none;
+  align-items: center;
+} */
+
+/* Category list/ chooser */
+.navigation-menu {
+  padding: .3rem;
+  border: 1px solid #272727;
+  border-radius: 5px;
+  background-color: #272727;
+}
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 30px;
+}
+.cat-header-hr {
+  background-color: rgb(65, 65, 65);
+}
+.cat-header {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.navigation-menu ul {    
+  margin: 0;
+  padding: 0;
+  line-height: 1.25;
+}
+.navigation-menu li {
+  text-align: center;
+  border-radius: 5px;
+  list-style: none;
+}
+.navigation-menu li:hover {
+  background-color: #242424;
+}
+.navigation-menu li .active {
+  background: linear-gradient(90deg, rgba(248,72,61,1) 0%, rgba(228,46,103,1) 100%);
+  color: white;
+  border-radius: 5px;
+}
+.navigation-menu .nav-link {
+  font-weight: bold;
+  display: block;
+  padding: 0.5em 0.75em;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.categorynum {
+  color: #aaaaaa;
+}
+.active .categorynum {
+  color: #fafafa;
+}
+
+/*    &nbsp; &nbsp;      */
+
+/* Table/ commands list */
+.tab-pane {
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+}
+.columns {
+  margin-left: -.75rem;
+  margin-right: -.75rem;
+  margin-top: -.75rem;
+}
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: .75rem;
+}
+.columns.multiline {
+  flex-wrap: wrap;
+}
+.command-header-container {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #1c1c1c;
+  height: 50px;
+  margin-bottom: 0px;
+  padding-left: 24px;
+}
+.command-header {
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  padding-left: 0px;
+}
+.command-container {
+  background-color: #343a40;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.command-row {
+  padding-left: 24px;
+  background: #313131;
+}
+.command-row:nth-child(even) {
+  background: #272727;
+}
+
+@media screen and (min-width: 901px) {
+  .columns {
+      display: flex;
+  }
+  .navbar {
+      display: flex;
+  }
+  /* Set the widths for when not in mobile view */  
+  .w15 {
+      flex: none;
+      width: 15%;
+  }
+  .w20 {
+      flex: none;
+      width: 20%;
+  }
+  .w25 {
+      flex: none;
+      width: 25%;
+  }
+  .w30 {
+      width: 30%;
+      flex: none;
+  }
+  .w45 {
+      width: 45%;
+      flex: none;
+  }
+  .w50 {
+      width: 50%;
+      flex: none;
+  }
+  .w60 {
+      width: 60%;
+      flex: none;
+  }
+  .w100 {
+      flex: none;
+      width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* Navbar stuff */    
+  .navbar .nav-links:not(.hide-mobile) {
+      display: block;
+  }
+  .navbar .navbar-brand {
+      align-content: center;
+      justify-content: center;
+      display: flex;
+      padding: 10px 0px;
+  }
+  .navbar .navbar-toggle {
+      display: block;
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      margin-left: 5px;
+      cursor: pointer;
+  }
+  
+  /* Hide the description & usage headers when it's all compacted (Also for the navbar) */  
+  .hide-mobile {
+      display: none;
+  }
+  
+  /* Home screen banner */
+  .banner-about {
+      text-align: Center;
+      margin: 0 auto;
+      max-width: 80%;
+  }
+  .banner-buttons {
+      margin: auto;
+      max-width: 300px;
+  }
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
