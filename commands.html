@@ -1,0 +1,1243 @@
+<head>
+  <script async src="https://arc.io/widget.min.js#UuUqrZw2"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./css/darklyo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+  crossorigin="anonymous">
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js'></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://cdn.discordapp.com/avatars/787438051479388170/a0327f5b21e992b9bbe833ce68e44d17.png?size=128"
+  />
+
+  <script src="./js/twemoji.js"></script>
+  <link rel="stylesheet" href="./css/emojis.css" />
+  <script src="./js/emojis.js"></script>
+
+  <title>
+    Radar
+  </title>
+
+  <!-- Choices includes -->
+  <link rel="stylesheet" href="./css/choices.css" />
+  <script src="./js/choices.js"></script>
+  <!-- End Choices includes -->
+
+  <style>
+    optgroup {
+      background: #3B3B3B;
+      color: #EEEEEE;
+    }
+
+    option {
+      background: #303030;
+      color: #ffffff;
+    }
+
+    .prlink {
+      color: #28A745;
+    }
+
+    .prlink:hover {
+      color: rgb(146, 43, 53);
+    }
+
+    hr {
+      background: #303030 !important;
+    }
+  </style>
+
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 0;">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="https://cdn.discordapp.com/avatars/787438051479388170/a0327f5b21e992b9bbe833ce68e44d17.png?size=128"
+      width="30" height="30" class="d-inline-block align-top rounded-circle" alt=""> Radar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar01"
+    aria-controls="navbar01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="/commands">Commands</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="https://discord.com/oauth2/authorize?client_id=787438051479388170&permissions=8&scope=bot%20applications.commands">Add to Server</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="https://status.radar-bot.xyz/">Bot Status</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="https://discord.com/invite/SHpVQNmgHt">Support</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+
+        <li class="nav-item"><a href="/login" class="nav-link"><i class="fa fa-key" aria-hidden="true"></i> Login (soon)</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<style>
+  .dropdown-item:hover{
+    background:linear-gradient(90deg, rgba(243,67,69,1) 0%, rgba(229,46,100,1) 100%) !important;
+  }
+</style>
+
+
+<div class="container">
+  <br />
+  <h2 class="text-center">Radar Commands</h2>
+  <div class="page-commands">
+    <div class="columns centered">
+      <div class="column w20">
+        <div class="navigation-menu sticky">
+          <h3 class="cat-header">Categories</h3>
+          <hr class="cat-header-hr" />
+          <ul class="menu-list">
+
+            <li><a class="nav-link " id="tab-user" href="#user">User <span class="categorynum">- 9</span></a>
+            </li>
+
+            <li><a class="nav-link " id="tab-fun" href="#fun">Fun <span class="categorynum">- 21</span></a>
+            </li>
+
+            <li><a class="nav-link " id="tab-game" href="#game">Games & Other<span class="categorynum">- 8</span></a>
+            </li>
+
+            <li><a class="nav-link " id="tab-music" href="#music">Music <span class="categorynum">- 9</span></a>
+            </li>
+
+            <li><a class="nav-link " id="tab-ticket" href="#ticket">Tickets <span class="categorynum">- 6</span></a>
+            </li>
+
+            <li><a class="nav-link " id="tab-eco" href="#eco">Economy <span class="categorynum">- 12</span></a>
+            </li>
+
+            <li><a class="nav-link " id="tab-tool" href="#tool">Server Tools<span class="categorynum">- 6</span></a>
+            </li>
+
+            <li><a class="nav-link " id="tab-app" href="#app">Applications <span class="categorynum">- 6</span></a>
+            </li>
+              
+            <li><a class="nav-link " id="tab-mana" href="#mana">Management <span class="categorynum">- 8</span></a>
+            </li>
+
+            <li><a class="nav-link " id="tab-part" href="#part">Partnerships <span class="categorynum">- 8</span></a>
+            </li>
+             
+            <li><a class="nav-link " id="tab-mod" href="#mod">Mod & Admin <span class="categorynum">- 12</span></a>
+            </li>
+              
+          </ul>
+        </div>
+      </div>
+      <div class="column w60 tab-content">
+
+        <div class="tab-pane active " id="user">
+          <div class="command-header-container columns">
+            <div class="column w25 command-header">Command</div>
+            <div class="column w45 command-header hide-mobile">Description</div>
+            <div class="column w30 command-header hide-mobile">Usage</div>
+          </div>
+          <div class="command-container columns multiline">
+
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">members</div>
+                <div class="column w45">Showing your server members</div>
+                <div class="column w30">
+                  <code>members</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">botinfo</div>
+                <div class="column w45">Showing Informations about bot</div>
+                <div class="column w30">
+                  <code>botinfo</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">channelinfo</div>
+                <div class="column w45">Informations about channel</div>
+                <div class="column w30">
+                  <code>channelinfo [#channel|channel id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">serverinfo</div>
+                <div class="column w45">Informations about server</div>
+                <div class="column w30">
+                  <code>serverinfo</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">roleinfo</div>
+                <div class="column w45">Informations about role</div>
+                <div class="column w30">
+                  <code>roleinfo [@role|role id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">userinfo</div>
+                <div class="column w45">Informations about user</div>
+                <div class="column w30">
+                  <code>userinfo [@user|user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">servericon</div>
+                <div class="column w45">Showing server image</div>
+                <div class="column w30">
+                  <code>servericon</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">help</div>
+                <div class="column w45">Giving you help and instructions</div>
+                <div class="column w30">
+                  <code>help, h [module]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">avatar</div>
+                <div class="column w45">Showing user avatar link</div>
+                <div class="column w30">
+                  <code>avatar [@user|user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">invites</div>
+                <div class="column w45">How many users you invited?</div>
+                <div class="column w30">
+                  <code>invites [@user|user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">inviteboard</div>
+                <div class="column w45">List of invites</div>
+                <div class="column w30">
+                  <code>inviteboard</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane " id="fun">
+          <div class="command-header-container columns">
+            <div class="column w25 command-header">Command</div>
+            <div class="column w45 command-header hide-mobile">Description</div>
+            <div class="column w30 command-header hide-mobile">Usage</div>
+          </div>
+          <div class="command-container columns multiline">
+
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">ascii</div>
+                <div class="column w45">Convert text to ascii</div>
+                <div class="column w30">
+                  <code>ascii [text]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">coinflip</div>
+                <div class="column w45">Flipping a coin</div>
+                <div class="column w30">
+                  <code>coinflip [tails|head]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">roll</div>
+                <div class="column w45">Roll a dice</div>
+                <div class="column w30">
+                  <code>roll</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">pp</div>
+                <div class="column w45">Penis size</div>
+                <div class="column w30">
+                  <code>pp [@user|user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">trumptweet</div>
+                <div class="column w45">Tweet as Donald Trump</div>
+                <div class="column w30">
+                  <code>trumptweet [text]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">gayrate</div>
+                <div class="column w45">Hoy much % you are gay?</div>
+                <div class="column w30">
+                  <code>gayrate [@user|user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">lesbianrate</div>
+                <div class="column w45">Do you like lesbians?</div>
+                <div class="column w30">
+                  <code>lesbianrate [@user| user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">simprate</div>
+                <div class="column w45">Are you simp? Find out!</div>
+                <div class="column w30">
+                  <code>simprate [@user| user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane " id="game">
+          <div class="command-header-container columns">
+            <div class="column w25 command-header">Command</div>
+            <div class="column w45 command-header hide-mobile">Description</div>
+            <div class="column w30 command-header hide-mobile">Usage</div>
+          </div>
+          <div class="command-container columns multiline">
+
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">spotify</div>
+                <div class="column w45">Snipe what user listening</div>
+                <div class="column w30">
+                  <code>spotify [@user|user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">translate</div>
+                <div class="column w45">Languages are so hard..</div>
+                <div class="column w30">
+                  <code>translate [language] [word]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">urban</div>
+                <div class="column w45">You are really interested.</div>
+                <div class="column w30">
+                  <code>urban [something]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">8ball</div>
+                <div class="column w45">Eight ball is here!</div>
+                <div class="column w30">
+                  <code>8ball [question?]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">rps</div>
+                <div class="column w45">Rock, paper, scissors.</div>
+                <div class="column w30">
+                  <code>rps</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">wouldyourather</div>
+                <div class="column w45">Would you rather?</div>
+                <div class="column w30">
+                  <code>wouldyourather</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">fortune</div>
+                <div class="column w45">Fortune, idk?</div>
+                <div class="column w30">
+                  <code>fortune</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">tictactoe</div>
+                <div class="column w45">Are you bored? Come play.</div>
+                <div class="column w30">
+                  <code>tictactoe [@user]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane " id="music">
+          <div class="command-header-container columns">
+            <div class="column w25 command-header">Command</div>
+            <div class="column w45 command-header hide-mobile">Description</div>
+            <div class="column w30 command-header hide-mobile">Usage</div>
+          </div>
+          <div class="command-container columns multiline">
+
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">play</div>
+                <div class="column w45">Plays song</div>
+                <div class="column w30">
+                  <code>play [song name|song url]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">pause</div>
+                <div class="column w45">Pause current song</div>
+                <div class="column w30">
+                  <code>pause</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">resume</div>
+                <div class="column w45">Resumes current song</div>
+                <div class="column w30">
+                  <code>resume</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">skip</div>
+                <div class="column w45">Skiping song</div>
+                <div class="column w30">
+                  <code>skip</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">stop</div>
+                <div class="column w45">Stoping music</div>
+                <div class="column w30">
+                  <code>stop</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">loop</div>
+                <div class="column w45">Looping song or queue</div>
+                <div class="column w30">
+                  <code>loop</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">queue</div>
+                <div class="column w45">Showing song queue</div>
+                <div class="column w30">
+                  <code>queue</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">autoplay</div>
+                <div class="column w45">Autoplaying songs</div>
+                <div class="column w30">
+                  <code>autoplay [on|off]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">volume</div>
+                <div class="column w45">Changing song volume</div>
+                <div class="column w30">
+                  <code>volume [1-100]%</code>
+                </div>
+              </div>
+            </div>
+            
+              <div class="tab-pane " id="ticket">
+          <div class="command-header-container columns">
+            <div class="column w25 command-header">Command</div>
+            <div class="column w45 command-header hide-mobile">Description</div>
+            <div class="column w30 command-header hide-mobile">Usage</div>
+          </div>
+          <div class="command-container columns multiline">
+
+              <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">newticket</div>
+                <div class="column w45">Opening ticket for support</div>
+                <div class="column w30">
+                  <code>newticket [reason]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">setuptickets</div>
+                <div class="column w45">Setting all necessary for tickets</div>
+                <div class="column w30">
+                  <code>setuptickets</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">ticketadd</div>
+                <div class="column w45">Adding user to ticket</div>
+                <div class="column w30">
+                  <code>ticketadd [user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">ticketremove</div>
+                <div class="column w45">Removing user from ticket</div>
+                <div class="column w30">
+                  <code>ticketremove [@user|user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">ticketclose</div>
+                <div class="column w45">Closing current ticket</div>
+                <div class="column w30">
+                  <code>ticketclose [reason]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">deletetickets</div>
+                <div class="column w45">Disabling ticket system</div>
+                <div class="column w30">
+                  <code>deletetickets</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane " id="eco">
+          <div class="command-header-container columns">
+            <div class="column w25 command-header">Command</div>
+            <div class="column w45 command-header hide-mobile">Description</div>
+            <div class="column w30 command-header hide-mobile">Usage</div>
+          </div>
+          <div class="command-container columns multiline">
+
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">work</div>
+                <div class="column w45">Earning money</div>
+                <div class="column w30">
+                  <code>work</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">buy</div>
+                <div class="column w45">Buying item from shop</div>
+                <div class="column w30">
+                  <code>buy [item]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">deposit</div>
+                <div class="column w45">Depositing money to bank</div>
+                <div class="column w30">
+                  <code>deposit [money]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">withdraw</div>
+                <div class="column w45">Withdraw money from bank</div>
+                <div class="column w30">
+                  <code>withdraw [money]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">daily</div>
+                <div class="column w45">Collecting daily reward</div>
+                <div class="column w30">
+                  <code>daily</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">rob</div>
+                <div class="column w45">Robing user</div>
+                <div class="column w30">
+                  <code>rob [@user]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">shop</div>
+                <div class="column w45">Showing server shop</div>
+                <div class="column w30">
+                  <code>shop</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">balance</div>
+                <div class="column w45">Showing user balance</div>
+                <div class="column w30">
+                  <code>balance [@user|user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">addmoney</div>
+                <div class="column w45">Adding money to user</div>
+                <div class="column w30">
+                  <code>addmoney [@user|user id] [amount]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">removemoney</div>
+                <div class="column w45">Removing money from user</div>
+                <div class="column w30">
+                  <code>removemoney [@user|user id] [amount]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">addtoshop</div>
+                <div class="column w45">Adding role to shop</div>
+                <div class="column w30">
+                  <code>addtoshop [@role|role id] [price]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">removefromshop</div>
+                <div class="column w45">Removing item from shop</div>
+                <div class="column w30">
+                  <code>removefromshop [item]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane " id="tool">
+          <div class="command-header-container columns">
+            <div class="column w25 command-header">Command</div>
+            <div class="column w45 command-header hide-mobile">Description</div>
+            <div class="column w30 command-header hide-mobile">Usage</div>
+          </div>
+          <div class="command-container columns multiline">
+
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">suggest</div>
+                <div class="column w45">Suggest something to server</div>
+                <div class="column w30">
+                  <code>suggest [your suggestion]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">setsuggest</div>
+                <div class="column w45">Setting up suggestions channel</div>
+                <div class="column w30">
+                  <code>setsuggest [#channel|channel id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">delsuggest</div>
+                <div class="column w45">Deleting suggestions system</div>
+                <div class="column w30">
+                  <code>delsuggest</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">report</div>
+                <div class="column w45">Reporting user to staff</div>
+                <div class="column w30">
+                  <code>report [@user] [reason]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">setreport</div>
+                <div class="column w45">Setting up reports channel, make it private</div>
+                <div class="column w30">
+                  <code>setreport [#channel|channel id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">delreport</div>
+                <div class="column w45">Deleting up reports system</div>
+                <div class="column w30">
+                  <code>delreport</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane " id="app">
+          <div class="command-header-container columns">
+            <div class="column w25 command-header">Command</div>
+            <div class="column w45 command-header hide-mobile">Description</div>
+            <div class="column w30 command-header hide-mobile">Usage</div>
+          </div>
+          <div class="command-container columns multiline">
+
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">apply</div>
+                <div class="column w45">Applying for staff member</div>
+                <div class="column w30">
+                  <code>apply</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">applyrole</div>
+                <div class="column w45">Setting up assing role (will be given when app approved)</div>
+                <div class="column w30">
+                  <code>applyrole [@role|role id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">applylog</div>
+                <div class="column w45">Setting applications channel (channel for upcoming applications)</div>
+                <div class="column w30">
+                  <code>applylog [#channel|channel id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">toggleapply</div>
+                <div class="column w45">Turning apply on and off</div>
+                <div class="column w30">
+                  <code>toggleapply [on|off]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">app-approve</div>
+                <div class="column w45">Accepting user application</div>
+                <div class="column w30">
+                  <code>app-approve [@user|user id] [reason]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">app-decline</div>
+                <div class="column w45">Declines user application</div>
+                <div class="column w30">
+                  <code>app-decline [@user|user id] [reason]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane " id="mana">
+          <div class="command-header-container columns">
+            <div class="column w25 command-header">Command</div>
+            <div class="column w45 command-header hide-mobile">Description</div>
+            <div class="column w30 command-header hide-mobile">Usage</div>
+          </div>
+          <div class="command-container columns multiline">
+
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">logging</div>
+                <div class="column w45">Setting up channel for all server loggings</div>
+                <div class="column w30">
+                  <code>logging [#channel|channel id|off]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">addrole</div>
+                <div class="column w45">Adding role to user</div>
+                <div class="column w30">
+                  <code>addrole [@user|user id] [@role|role id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">removerole</div>
+                <div class="column w45">Removing role from user</div>
+                <div class="column w30">
+                  <code>removerole [@user|user id] [@role|role id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">lockdown</div>
+                <div class="column w45">Locking and unlocking channel</div>
+                <div class="column w30">
+                  <code>lockdown [on|off] [reason]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">slowmode</div>
+                <div class="column w45">Setting up channel slowmode</div>
+                <div class="column w30">
+                  <code>slowmode [time]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">createchannel</div>
+                <div class="column w45">Creating channel for you</div>
+                <div class="column w30">
+                  <code>createchannel [type] [channel name]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">massnick</div>
+                <div class="column w45">Setting same nick to all users in servers</div>
+                <div class="column w30">
+                  <code>massnick [nickname|reset]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">setprefix</div>
+                <div class="column w45">Changing bot prefix</div>
+                <div class="column w30">
+                  <code>setprefix [new prefix]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane " id="part">
+          <div class="command-header-container columns">
+            <div class="column w25 command-header">Command</div>
+            <div class="column w45 command-header hide-mobile">Description</div>
+            <div class="column w30 command-header hide-mobile">Usage</div>
+          </div>
+          <div class="command-container columns multiline">
+
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">pdeny</div>
+                <div class="column w45">Descine partner request</div>
+                <div class="column w30">
+                  <code>pdeny [server id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">paccept</div>
+                <div class="column w45">Accepting partner request</div>
+                <div class="column w30">
+                  <code>paccept [server id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">pcancel</div>
+                <div class="column w45">Canceling sended request</div>
+                <div class="column w30">
+                  <code>pcancel [server id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">pchat</div>
+                <div class="column w45">Chatting up with partnered server</div>
+                <div class="column w30">
+                  <code>pchat [number] [message]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">psetchannel</div>
+                <div class="column w45">Setting channel for partner requests and chat</div>
+                <div class="column w30">
+                  <code>psetchannel [#channel|channel id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">presetchannel</div>
+                <div class="column w45">Reseting partner channel</div>
+                <div class="column w30">
+                  <code>presetchannel</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">addpartner</div>
+                <div class="column w45">Sending partner request to server</div>
+                <div class="column w30">
+                  <code>addpartner [server id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">removepartner</div>
+                <div class="column w45">Removing partner</div>
+                <div class="column w30">
+                  <code>removepartner [place]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane " id="mod">
+          <div class="command-header-container columns">
+            <div class="column w25 command-header">Command</div>
+            <div class="column w45 command-header hide-mobile">Description</div>
+            <div class="column w30 command-header hide-mobile">Usage</div>
+          </div>
+          <div class="command-container columns multiline">
+
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">snipe</div>
+                <div class="column w45">Snipe something</div>
+                <div class="column w30">
+                  <code>snipe</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">ban</div>
+                <div class="column w45">Banning user from server</div>
+                <div class="column w30">
+                  <code>ban [@user|user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">hackban</div>
+                <div class="column w45">Banning user outside server</div>
+                <div class="column w30">
+                  <code>hackban [user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">clear</div>
+                <div class="column w45">This is for clean chat ;)</div>
+                <div class="column w30">
+                  <code>clear [1-100]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">kick</div>
+                <div class="column w45">Kicking user from server</div>
+                <div class="column w30">
+                  <code>kick [@user|user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">unban</div>
+                <div class="column w45">Unbanning user</div>
+                <div class="column w30">
+                  <code>unban [user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">embed</div>
+                <div class="column w45">Creating embed for you</div>
+                <div class="column w30">
+                  <code>embed [text]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">poll</div>
+                <div class="column w45">Creating a poll</div>
+                <div class="column w30">
+                  <code>poll [question]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">say</div>
+                <div class="column w45">Saying message through bot</div>
+                <div class="column w30">
+                  <code>say [message]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">warn</div>
+                <div class="column w45">Warn a user</div>
+                <div class="column w30">
+                  <code>warn [@user|user id] [reason]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">warns</div>
+                <div class="column w45">Check how many warns you have</div>
+                <div class="column w30">
+                  <code>warns [@user|user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="command-row w100 column">
+              <div class="columns">
+                <div class="column w25">clearwarns</div>
+                <div class="column w45">Removing all warns from user</div>
+                <div class="column w30">
+                  <code>clearwarns [@user|user id]</code>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+        
+      </div>
+  </div>
+</div>
+
+<script>
+  // If someone it trying to link to a specific tab
+  if (window.location.hash) {
+      var hash = window.location.hash;
+      hash = hash.replace("#", "");
+
+      // Make sure it's a valid id, else just go to the default one
+      if ($("#"+hash).length && $(".nav-link#tab-" + hash).length) {
+          //  First remove class "active" from currently active tab & table
+          $(".nav-link").removeClass('active');
+          $(".tab-pane").removeClass("active");
+
+          // Add the active class to the appropriate ones
+          $(".nav-link#tab-" + hash).addClass("active")
+          $("#" + hash).addClass("active");
+      }
+  }
+
+  $(document).ready(function() {
+      //  When user clicks on tab, show the corresponding table
+      $(".navigation-menu .menu-list a").click(function() {
+          //  Here we get the href value of the selected tab
+          var selected_tab = $(this).attr("href");
+          // window.location.hash = selected_tab; // Removed a 
+
+          //  First remove class "active" from currently active tab & table
+          $(".nav-link").removeClass('active');
+          $(".tab-pane").removeClass("active");
+
+          //  Now add class "active" to the selected/clicked tab & table
+          $(this).addClass("active");
+          $(selected_tab).addClass("active");
+
+          // Return false so it doesn't scroll when clicked
+          return false;
+      });
+      
+      var currentPage = location.pathname;
+      $('#navbar .nav-links').each(function(){
+          var $this = $(this);
+          // if the current path is like this link, make it active
+          if($this.attr('href').indexOf(currentPage) !== -1){
+              $this.addClass('active');
+          }
+      })
+  });
+
+  function toggleNav() {
+      // Toggle the nav in mobile mode
+      const menus = document.getElementById("navbar").getElementsByClassName("nav-links");
+      for (var i = 0; i < menus.length; i++) {
+          menus[i].classList.toggle("hide-mobile");
+      }
+  }
+</script>
+
+<link rel="stylesheet" href="./css/commands.css" />
+</div>
+<footer class="my-5 pt-5 text-muted text-center text-small" style="cursor:default;">
+  <div class="container"><hr></div>
+  <p class="mb-1" style="color:#DDD;">Copyright &copy; Radar Team 2021</p>
+  <ul class="list-inline">
+    <li class="list-inline-item"><a class="prlink" href="https://discord.com/invite/SHpVQNmgHt">Support Server</a></li>
+    <li class="list-inline-item"><a class="prlink" href="https://status.radar-bot.xyz">Status</a></li>
+  </ul>
+  
+</footer>
