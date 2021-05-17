@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Screen recorder</title>
+    <meta name="description" content="Imagine needing to install an extension for this."/>
+
+    <link rel="stylesheet" type="text/css" href="./css/chat.css">
+    <script src="./js/chat.js" charset="utf-8"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --red: #e04266;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        display: flex;
+        /* Put the controls on top so that the screen share warning doesn't
+        /* obscure it. */
+        flex-direction: column-reverse;
+        background-color: #121014;
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+      }
+
+      button,
+      input,
+      select {
+        -webkit-appearance: none;
+        border: none;
+        background: none;
+        font: inherit;
+        color: inherit;
+      }
+      button:not(:disabled) {
+        cursor: pointer;
+      }
+
+      .icon-btn {
+        display: inline-flex;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+      .icon-btn:not(:disabled):hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .volume {
+        height: 5px;
+        flex: auto;
+        background-color: rgba(255, 255, 255, 0.03);
+        margin: 10px;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .volume.active {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      .volume.active::before {
+        content: '';
+        display: block;
+        width: var(--volume);
+        background-color: var(--red);
+        height: 100%;
+      }
+
+      .video {
+        flex: auto;
+        height: 0;
+        display: flex;
+      }
+      body:not(.no-video-source) .select-source-wrapper,
+      body.no-video-source .video-preview {
+        display: none;
+      }
+      .select-source-wrapper {
+        flex: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .select-source {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+      .select-source:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      .select-source .material-icons {
+        margin-right: 10px;
+      }
+      .line {
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        height: 80px;
+        margin: 0 20px;
+      }
+      .video-preview {
+        flex: auto;
+        width: 0;
+      }
+
+      .control-bar {
+        display: flex;
+        background-color: #1c191f;
+      }
+      .mic-settings,
+      .cam-settings {
+        display: flex;
+        flex: 1 0 0;
+        padding: 10px;
+        align-items: center;
+      }
+      .mic-off {
+        color: var(--red);
+      }
+      body:not(.mic-is-off) .mic-off,
+      body.mic-is-off .mic-on {
+        display: none;
+      }
+      .control-btns {
+        display: flex;
+        padding: 10px;
+      }
+      body.recording .record,
+      body:not(.recording) .pause-play-icon,
+      body.paused .pause,
+      body:not(.paused) .play {
+        display: none;
+      }
+      .stop-recording {
+        margin-left: 10px;
+      }
+      .record-icon {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .record-icon::before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: var(--red);
+        border-radius: 50%;
+      }
+      .cam-settings {
+        flex-direction: row-reverse;
+      }
+
+      :disabled {
+        opacity: 0.3;
+      }
+    </style>
+  </head>
+  <body class="no-video-source mic-is-off">
+    <div class="video" id="video-wrapper">
+      <div class="select-source-wrapper">
+        <button class="select-source" id="record-screen">
+          <span class="material-icons">desktop_windows</span>
+          Record screen
+        </button>
+        <div class="line"></div>
+        <button class="select-source" id="record-cam">
+          <span class="material-icons">videocam</span>
+          Record camera
+        </button>
+      </div>
+      <video class="video-preview" id="video" muted></video>
+    </div>
+    <div class="control-bar">
+      <div class="mic-settings">
+        <button class="icon-btn" id="toggle-mic" title="Turn on microphone">
+          <span class="material-icons mic-off">mic_off</span>
+          <span class="material-icons mic-on">mic</span>
+        </button>
+        <!-- TODO: Select microphone source -->
+        <div class="volume" id="mic-volume"></div>
+      </div>
+      <div class="control-btns" id="control-btns">
+        <button class="icon-btn" title="Start recording" id="record" disabled>
+          <span class="record-icon record"></span>
+          <span class="material-icons pause-play-icon pause">pause</span>
+          <span class="material-icons pause-play-icon play">play_arrow</span>
+        </button>
+        <button class="icon-btn stop-recording" title="Stop recording" id="stop-record" disabled>
+          <span class="material-icons">stop</span>
+        </button>
+      </div>
+      <div class="cam-settings">
+        <button class="icon-btn disable-cam" id="disable-cam" title="Turn off video" disabled>
+          <span class="material-icons">videocam_off</span>
+        </button>
+        <!-- TODO: Select microphone source -->
+        <div class="volume" id="screen-volume"></div>
+      </div>
+    </div>
+    <script type="module">
+      import * as module from './js/screen.js'
+      Object.assign(window, module)
+    </script>
+  </body>
+</html>
