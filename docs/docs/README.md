@@ -3,7 +3,7 @@ id: home
 title: Introduction
 hide_title: true
 sidebar_label: Introduction
-description: The Entire Guide about Discortics™.
+description: The Entire Guide about Radar.
 ---
 
 # Radar
